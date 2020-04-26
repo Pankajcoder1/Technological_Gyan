@@ -1,0 +1,51 @@
+span
+	{
+		font-weight: bolder;
+		animation: title 2s infinite;
+	}
+@keyframes title
+{s
+	0%{color: red;}
+	25%{color: #bf55ec;}
+	50%{color: #bde564;}
+	100%{color: #bf55ec;}
+}
+.main
+	{
+		padding: 20px;
+		font-size: 20px;
+		font-family: 'Courier Prime', monospace;
+	}
+.thumbnail
+{
+	border: none;
+}
+.github
+	{
+		float: right;
+		margin-right: 10px;
+	}
+
+.github:hover
+{
+	color: red;
+	font-size: 15px;
+}
+.linkedin:hover
+{
+	color: red;
+	font-size: 15px;
+}
+.linkedin
+{
+	float: left;
+	margin-left: 15px;
+}
+img
+{
+	width: cover;
+}
+.team
+{
+	height: 85px;
+}
