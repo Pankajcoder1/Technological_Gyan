@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Signup Page</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <!-- jquery link added here. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+        <script src="js/bootstrap.min.js"></script>
+        <!-- external css file -->
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
+        
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Help Me</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid decor-bg" id="content">
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-6 col-lg-offset-4 col-md-6 col-md-offset-3">
+                        <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2>SIGN UP</h2>
+                        </div>
+                        <div class="panel-body">
+                            <form  action="#" method="POST">  <!--  add link of page-->
+                                
+                            <div class="form-group">
+                                <input class="form-control" placeholder="College" name="college"  required>
+                                <span class="error">
+                                    <!-- php code here for error message. -->
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Full name"  name="full_name" required>
+                                <span class="error">
+                                    <!-- php code here for error message. -->
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control"  placeholder="Email"  name="email" required>
+                                <span class="error">
+                                    <!-- php code here for error message. -->
+                                </span>
+                            </div>
+                            
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+
+                            <p class="last">Have account.<a href="login.html" class="last-link">Login.</a>  </p>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <center>
+                    <p>Copyright &copy; Help Me. All Rights Reserved |</p>    
+                </center>
+            </div>
+        </footer>
+    </body>
+</html>

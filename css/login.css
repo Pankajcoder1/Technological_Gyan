@@ -21,8 +21,10 @@ body,h4
     font-weight: 700;
 }
 
-#content{
-    min-height: 600px;
+#content
+{
+    margin-top: 155px;
+    min-height: 560px;
 }
 
 #banner_image {
@@ -46,16 +48,6 @@ body,h4
 #item_list {
     padding-top: 50px;
 }
-
-/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
-#cameras:before, #watches:before, #shirts:before{
-    display: block; 
-    content: " "; 
-    margin-top: -85px; 
-    height: 85px; 
-    visibility: hidden;
-}
-
 
 #login-panel .panel-footer{
     font-weight:normal;

@@ -15,8 +15,10 @@ body{
 .last-link:hover{
         color:red; 
 }
-.decor-bg{
-         min-height: 540px;
+.decor-bg
+{
+    margin-top: 265px;
+    min-height: 550px;
 }
 footer{
         padding: 10px 0;
