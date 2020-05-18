@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .register{
+            width:70%;
+            height:80vh;
+            border:solid #8900a8 5px;
+            border-radius:15px;
+            margin-top:5vh;
+        }
+        .form{
+            margin-top:30px;
+            padding:10px;
+        }
+        button{
+            margin-top:20px;
+            background-color:#8900a8;
+            color:white;
+        }
+
+        input{
+            width:200px;
+            height:20px;
+            text-align:center;
+        }
+        th{
+            border:solid rgba(0,0,0,.2) 1px;
+            width:400px;;
+            padding-top:0px;
+            padding-bottom:0px;
+        }
+        td{
+            text-align:center;
+            border-bottom:solid #8900a8 .2px;
+        }
+    </style> 
+</head>
+<body>
+    <center>
+        <div>
+            <div class="register">
+
+                <form class="form" action="test.php" method="get">
+                    <input type="text" name="col_name" id="college_name" placeholder="enter college name here"><br>
+                    <button type="submit" name="register">register</button>
+                </form>
+                <form action="" method="get">
+                <input type="number" class="out" name="coll_id"placeholder="enter college id" >&nbsp;&nbsp;
+                or&nbsp;&nbsp;<input type="text" name="coll_name"  id="college-name" placeholder="enter college name here" >
+                <button type="submit" name="search">search</button>
+                </form>
+                <hr color="#8900a8" width="60%"><br>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

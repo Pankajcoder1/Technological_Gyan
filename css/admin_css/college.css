@@ -1,0 +1,37 @@
+body
+{
+	background-color: #827777;
+}
+.main
+{
+	padding: 50px;
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border-radius: 12px;
+}
+.msg
+{
+	margin-bottom: 10px;
+	color: red;
+	text-align: center;
+}
+.link a
+{
+	float: right;
+	position: absolute;
+	top: 130px;
+	right: 25px;
+}
+.btn:hover
+{
+	background-color: #fff;
+	color: #23527c;
+	border: none;
+}
+.btn a
+{
+	text-decoration: none;
+}
