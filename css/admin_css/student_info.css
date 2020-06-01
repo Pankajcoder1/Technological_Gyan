@@ -1,0 +1,112 @@
+/*written by 
+	Pankaj Kumar.*/
+.body
+			{
+				min-height: 100vh;
+			}
+			.row .jumbotron
+			{
+				background-color: #f0f0f0;
+			}
+			.row
+			{
+				top: 50%;
+				width: 80%;
+				left: 45%;
+				transform: translate(-40%,-50%);
+				position: absolute;
+			}
+			.education_radio_button
+			{
+				margin-top: -10px;
+			}
+			.education_year_p
+			{
+				margin-top: 10px;
+			}
+			.education_year_radio_button
+			{
+				margin-top: -10px;
+			}
+			.info_form
+			{
+				margin-top: 35px;
+			}
+			.submit_button
+			{
+				width: 120px;
+				height: 40px;
+				font-weight: 800;
+			}
+			.text-center .submit_button:hover
+			{
+				background-color: #fff;
+				color: rgba(51,103,214,0.7);
+				font-size: 17px;
+				font-weight: 900;
+				border: none;
+			}
+			.exit_button_div
+			{
+				position: fixed;
+				bottom: 15px;
+				right: 40px;
+			}
+
+/*1200 992 768 576*/
+			@media(min-width: 576px)
+			{
+				.row
+				{
+					top: 50%;
+					width: 80%;
+					left: 50%;
+					transform: translate(-40%,-50%);
+					position: absolute;
+				}
+			}
+
+			@media(min-width: 768px)
+			{
+				.row
+				{
+					top: 50%;
+					width: 70%;
+					left: 49%;
+					transform: translate(-40%,-50%);
+					position: absolute;
+				}
+			}
+			@media(min-width: 992px)
+			{
+				.row
+				{
+					top: 50%;
+					width: 70%;
+					left: 53%;
+					transform: translate(-40%,-50%);
+					position: absolute;
+				}
+			}
+			@media(min-width: 1200px)
+			{
+				.row
+				{
+					top: 50%;
+					width: 60%;
+					left: 52%;
+					transform: translate(-39%,-50%);
+					position: absolute;
+				}
+			}
+			@media(min-width: 1500px)
+			{
+				.row
+				{
+					top: 50%;
+					width: 60%;
+					left: 55%;
+					transform: translate(-40%,-50%);
+					position: absolute;
+				}
+			}

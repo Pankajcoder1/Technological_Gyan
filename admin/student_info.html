@@ -1,73 +1,93 @@
+<!-- written by
+       pankaj kumar. -->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-            body{
-                background-color:#ffffff;
-            }
-            .border{
-                border:solid black 2px;
-                margin:3% 23%;
-                border-radius:20px;
-                background-color:#3879d6;
-            }
-            div{
-                padding:0px;
-            }
-            .form{
-                border:2px solid black;
-                border-radius:20px;
-                padding-bottom:20px;
-                margin:2%  2%;
-                background-color:white;
-            }
-           .roll{
-                height:5vh;
-                width:350px;
-                text-align:center;
-                
-            }
-            button{
-                height:30px;
-                width:100px;
-                background-color:#3879d6;
-            }
-    </style>
-</head>
-<body><div class="body">
-<div class="border">
-    <div class="form"><center>
-        <form action="<?php echo $_SERVER['PHP_SELF']?>" class="student" method="GET">
-        <div class="stream">
-            <h4>DEGREE OF EDUCATION</h4>
-            <input type="radio"name="stream" id="btech" value="Btech" required><label for="btech">B.TECH</label>
-            <input type="radio"name="stream" id="mtech" value="Mtech"><label for="mtech">M.TECH</label>
-            <input type="radio"name="stream"id="phd" value="PHD"><label for="phd">PHD </label>
-        </div>
-        <div class="year">
-            <h4> YEAR OF DEGREE</h4>
-            <input type="radio" name="year" value="first" id="first" required><label for="first"> FIRST</label>
-            <input type="radio" name="year" id="second" value="second"><label for="second"> SECOND</label>
-            <input type="radio" name="year" id="third" value="third"><label for="third">THIRD</label>
-            <input type="radio" name="year" id="forth" value="forth"><label for="forth"> FORTH</label>  
-        </div><br>
-        <div class="info">
-            <br><br>
-            <input type="text" class="roll"name="roll_no" id="roll_no" placeholder="roll no" required ><br><br>
-            <input type="text" class="roll"name="email" id="email" placeholder="email" required>
-        </div>
-        <br>
-        <button type="submit" name="register">submit</button><br>
-        </form>
-        </center>
-    </div>
-</div>
-<form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
-<button type="submit" name="exit" style="background-color:black;color:white;float:right;margin-right:100px;">exit</button></form>
-</div>  
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- css file -->
+		<link rel="stylesheet" type="text/css" href="../css/admin_css/student_info.css">
+		<!-- cdn link -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<title>
+			Students info page.
+		</title>
+	</head>
+	
+	<body class="container body">
+		<div class="row">
+			<div class="col-md-10 col-lg-9 col-sm-10 jumbotron align-self-center">
+				<div class="text-center education_p">
+					<p>Degree of Education</p>
+				</div>
+				<!-- education radio button part start -->
+				<div class="education_radio_button text-center">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOption" id="b_tech_radio_button">
+						<label class="form-check-label" for="b_tech_radio_button">B.TECH</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOption" id="m_tech_radio_button">
+						<label class="form-check-label" for="m_tech_radio_button">M.TECH</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOption" id="phd_radio_button">
+						<label class="form-check-label" for="phd_radio_button">PHD</label>
+					</div>
+				</div>
+				<!-- education radio button part end  -->
+				<div class="text-center education_year_p">
+					<p>Year of Degree</p>
+				</div>
+				<!-- eduaction year radio button start here -->
+				<div class="education_year_radio_button text-center">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="first_year_radio_button">
+						<label class="form-check-label" for="first_year_radio_button">First</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="second_year_radio_button">
+						<label class="form-check-label" for="second_year_radio_button">Second</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="third_year_radio_button">
+						<label class="form-check-label" for="third_year_radio_button">Third</label>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="forth_year_radio_button">
+						<label class="form-check-label" for="forth_year_radio_button">Forth</label>
+					</div>
+				</div>
+			<!-- eduaction year radio button end here -->
+
+				<form action="" class="info_form">
+					<div class="info_div">
+						<div class="form-group">
+							<input type="text" name="" class="form-control" placeholder="Roll ...">
+						</div>
+
+						<div class="form-group">
+							<input type="email" name="" class="form-control" placeholder="Email ...">
+						</div>
+						<div class="text-center">
+							<input type="submit" value="Submit" class="btn btn-primary submit_button">
+						</div>
+					</div>
+				</form>
+
+				<!-- This button will go done buttom side -->
+			</div>
+			<!-- colun end here -->
+		</div>
+		<!-- row end here -->
+		<div class="exit_button_div">
+			<button type="button" class="btn btn-secondary exit_button" formmethod="POST" formenctype="">Exit</button>
+		</div>
+	</body>
 </html>
